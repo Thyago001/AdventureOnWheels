@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+   <title>Adventure on Wheels</title>
+</head>
+<body>
+   <main>
+    <!-- Primeira página -->
+    <div class="passo ativo" id="passo-0">
+        <h1><strong><em>Seja Bem Vindo(a) a essa Aventura!!</em></strong></h1>
+        <img src="img/00.jpeg" alt="Ford Escort 1995 abandonado">
+        <p><strong>A história de uma possível aventura automotiva. Um jovem explora a antiga casa de seu avô falecido, com a chave de uma garagem como sua última lembrança e uma preciosa herança. Com diferentes caminhos a se seguir e um horizonte à sua frente, a questão é... <em>Você topa essa aventura?!</em></strong></p>
+        <button class="btn-proximo" data-proximo="1">VAMOS NESSA!!!</button>
+    </div>
+
+    <!-- Segunda página: Início da jornada -->
+    <div class="passo" id="passo-1">
+        <h1><strong><em>O INÍCIO DA JORNADA!!</em></strong></h1>
+        <img src="img/01.jpg" alt="Ford Escort consertado">
+        <p>Ao entrar na garagem de seu falecido avô, um jovem encontra um Ford Escort 1995 abandonado. O carro está sujo e velho, mas parece que com um conserto poderia voltar a rodar. Ele decide o que fazer.</p>
+        <button class="btn-proximo" data-proximo="2">Consertar o carro</button>
+        <button class="btn-proximo" data-proximo="3">Abandonar o carro</button>
+    </div>
+
+    <!-- Consertar o carro -->
+    <div class="passo" id="passo-2">
+        <img src="img/02.jpg" alt="Ford Escort consertado">
+        <p>O jovem decide consertar o carro. Com esforço e ao cair da noite, ele consegue colocá-lo em funcionamento. Agora, o carro está pronto para a estrada.</p>
+        <button class="btn-proximo" data-proximo="4">Hora de dirigir!</button>
+    </div>
+
+    <!-- Encruzilhada -->
+    <div class="passo" id="passo-4">
+        <img src="img/05.jpeg" alt="Encruzilhada">
+        <p>Com o carro em funcionamento, o jovem segue viagem e chega a uma encruzilhada. Ele precisa tomar uma decisão: virar à esquerda, onde o caminho parece levar à praia; virar à direita, que leva a uma trilha densa; ou continuar reto, com o caminho ficando cada vez mais perigoso.</p>
+        <button class="btn-proximo" data-proximo="5">Virar à esquerda</button>
+        <button class="btn-proximo" data-proximo="6">Virar à direita</button>
+        <button class="btn-proximo" data-proximo="7">Seguir reto</button>
+    </div>
+
+    <!-- Viagem de ônibus -->
+    <div class="passo" id="passo-3">
+        <img src="img/03.jpeg" alt="ônibus">
+        <p>Sem confiar no estado do carro, o jovem decide seguir viagem de ônibus. A aventura termina de forma pacata, mas ele sempre se pergunta o que teria acontecido se tivesse consertado o carro.</p>
+        <button class="btn-proximo" data-proximo="0">De Volta ao Início...</button>
+    </div>
+
+    <!-- Caminho da praia -->
+    <div class="passo" id="passo-5">
+        <img src="img/06.jpeg" alt="Praia ao amanhecer">
+        <p>Seguindo pela esquerda, o jovem chega a uma praia deserta ao amanhecer. O som das ondas e a brisa do mar trazem uma sensação de paz. Ele estaciona o carro e aproveita o silêncio do local. Fim da aventura.</p>
+        <button class="btn-proximo" data-proximo="0">De Volta ao Início...</button>
+    </div>
+
+    <!-- Caminho da cachoeira -->
+    <div class="passo" id="passo-6">
+        <img src="img/07.jpeg" alt="Cachoeira"> 
+        <p>Escolhendo o caminho da direita, o jovem encontra uma cachoeira cristalina. Ele estaciona o carro perto da queda d'água e decide se banhar. O cenário é tranquilo e inspirador. Fim da aventura.</p>
+        <button class="btn-proximo" data-proximo="0">De Volta ao Início...</button>
+    </div>
+
+    <!-- Acidente de carro -->
+    <div class="passo" id="passo-7">
+        <img src="img/08.jpeg" alt="Acidente de carro">
+        <p>Ao seguir reto, o jovem perde o controle do carro em uma curva fechada. O Ford Escort capota e começa a pegar fogo. Infelizmente, ele não consegue escapar. Fim trágico da aventura.</p>
+        <button class="btn-proximo" data-proximo="0">De Volta ao Início...</button> 
+    </div>
+   </main>
+
+   <script src="script.js"></script>
+</body>
+</html>
